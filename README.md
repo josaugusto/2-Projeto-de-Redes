@@ -1,1 +1,6 @@
-# Projeto-de-Redes-2
+# Jogo da Adivinhação
+
+## Instalação
+
+## Uso
+
