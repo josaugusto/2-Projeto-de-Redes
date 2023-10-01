@@ -20,3 +20,27 @@ Os comandos deverão ser realizados no terminal do Git:
 
 ## Uso
 
+Para jogar, é necessário que você tenha aberto a pasta do jogo no seu editor de código. Caso tenha o VScode instalado e tenha concluído o último passo da instrução de instalação, basta executar o seguinte comando.
+
+- $ code .
+
+e o projeto será aberto no VScode.
+
+para rodar o jogo você deverá abrir dois terminais no VScode, sendo um para o servidor e um para o cliente, lembre-se, o terminal do servidor não deve ser fechado durante a partida, caso contrário o jogo será finalizado.
+
+Ao abrir os dois terminais você deverá digitar o seguintes comandos
+
+no primeiro terminal:
+
+- $ python server.py
+
+e no segundo terminal:
+
+- $ python client.py
+
+ao colocar a opção de logar no servidor, você deverá informar o IP do servidor que é o localhost sendo assim você deverá informar 
+
+- $ IP: 127.0.0.1
+- $ Porta: 50000
+
+caso você deseje alterar o IP do servidor para jogar de outro pc dentro da própria rede é só alterar no código a linha 6, trocando o nome localhost pelo ip de sua máquina. porém deverá manter as aspas simples ''.
