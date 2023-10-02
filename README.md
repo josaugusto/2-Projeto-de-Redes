@@ -1,6 +1,6 @@
 # Jogo da Adivinhação
 
-Vamos brincar de adivinhar o animal! O servidor vai te fazer perguntas espertas para descobrir qual é o bicho que está na sua mente. Com cada pergunta, ele vai eliminando opções até chegar na resposta. O jogo utiliza sockets TCP em Python para estabelecer a conexão entre o cliente e o servidor. Quando a conexão é estabelecida, o servidor cria uma thread para cada jogador, garantindo que cada usuário jogue individualmente, sem interação com outros jogadores conectados.
+Vamos brincar de adivinhar o animal! O servidor vai te fazer perguntas para descobrir qual é o bicho que está na sua mente. Com cada pergunta, ele vai eliminando opções até chegar na resposta. O jogo utiliza sockets TCP em Python para estabelecer a conexão entre o cliente e o servidor. Quando a conexão é estabelecida, o servidor cria uma thread para cada jogador, garantindo que cada usuário jogue individualmente, sem interação com outros jogadores conectados.
 
 ## Instalação
 
