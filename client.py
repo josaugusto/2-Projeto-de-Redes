@@ -15,6 +15,22 @@ def client(ADDR):
         socket_client.connect(ADDR)
         print(f'Conectado ao servidor em {ADDR[0]} {ADDR[1]}')
 
+        while True:
+            data = socket_client.recv(4096)
+            data = data.decode() # recebe a resposta do servidor
+
+            if data == 'Eu acho que o animal que você está pensando é um(a) {animals[animalsIdxAux[0]]}.' or data == 'Sério? Desculpa, não sei o que aconteceu. :(':
+                data = socket_client.recv(4096)
+                print(data)
+                socket_client.sendall(input().strip())
+                data = socket_client.recv(4096)
+                print(data.decode())
+                break
+            else: 
+                socket_client.sendall(data.encode())
+    sleep(3)
+    menu() 
+
 def menu():
     if os.name == 'nt':
         clear_cmd = 'cls'
