@@ -14,7 +14,7 @@ def client(ADDR):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as socket_client:
         socket_client.connect(ADDR)
         print(f'Conectado ao servidor em {ADDR[0]} {ADDR[1]}')
-        print('Pense em um Animal e o Servidor irá adivinhar!')
+        print('\n-> Pense em um Animal e o Servidor irá adivinhar!\n')
         while True:
             data = socket_client.recv(4096)
             data = data.decode() # recebe a resposta do servidor
