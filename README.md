@@ -45,4 +45,4 @@ ao colocar a opção de logar no servidor, você deverá informar o IP do servid
 - $ IP: 127.0.0.1
 - $ Porta: 50000
 
-caso você deseje alterar o IP do servidor para jogar de outro pc dentro da própria rede é só alterar no código a linha 6, trocando o nome localhost pelo ip de sua máquina. porém deverá manter as aspas simples ''.
+caso você deseje alterar o IP do servidor para jogar de outro pc dentro da própria rede é só alterar no código na linha 8, trocando o nome localhost pelo ip de sua máquina. porém deverá manter as aspas simples ''.
