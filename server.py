@@ -58,7 +58,7 @@ def handle_client(socket_client, client_address):
                 animalsIdxAux.remove(animalIdx)
         if len(animalsIdxAux) == 1:
             # MOSTRA OS RESULTADO
-            mensage = f'Eu acho que o animal que você está pensando é um(a) {animals[animalsIdxAux[0]]}.'
+            mensage = f'Eu acho que o animal que você está pensando é um(a) {animals[animalsIdxAux[0]]}.\nEu acertei? (s/n): '
             socket_client.sendall(mensage.encode())
             data = socket_client.recv(4096) # resposta do cliente
             if data.decode() == 's':
