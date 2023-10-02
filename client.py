@@ -29,7 +29,7 @@ def client(ADDR):
                 data = socket_client.recv(4096)
                 print(data.decode())
                 break
-    sleep(3)
+    sleep(3) # foi só para não apagar tudo sem ver a mensagem.
     menu() 
 
 def menu():
