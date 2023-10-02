@@ -1,5 +1,7 @@
 # Jogo da Adivinhação
 
+Vamos brincar de adivinhar o animal! O servidor vai te fazer perguntas espertas para descobrir qual é o bicho que está na sua mente. Com cada pergunta, ele vai eliminando opções até chegar na resposta. O jogo utiliza sockets TCP em Python para estabelecer a conexão entre o cliente e o servidor. Quando a conexão é estabelecida, o servidor cria uma thread para cada jogador, garantindo que cada usuário jogue individualmente, sem interação com outros jogadores conectados.
+
 ## Instalação
 
 Para realizar a instalação será necesário que você tenha o [Python](https://www.python.org/downloads/), [Git](https://git-scm.com/) e o Editor de código de sua preferencia(para facilitar a visualização e edição do ip do servidor, caso queira deixar ele acessivel para outros computadores poderem acessar) recomendamos [VScode](https://code.visualstudio.com/).
