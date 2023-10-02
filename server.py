@@ -46,7 +46,6 @@ def handle_client(socket_client, client_address):
         if not attributeFactibility:
             continue
         mensage = f'O animal que você está pensando {atributes[attributeIdx]}? (s/n): '
-        
         socket_client.sendall(mensage.encode())
         r = socket_client.recv(4096).decode()
         if r == 's':
