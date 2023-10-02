@@ -18,7 +18,10 @@ def client(ADDR):
         while True:
             data = socket_client.recv(4096)
             data = data.decode() # recebe a resposta do servidor
-
+            print(data)
+            mensage = input().strip().lower()
+            socket_client.sendall(mensage.encode())
+            
             if data == 'Eu acho que o animal que você está pensando é um(a) {animals[animalsIdxAux[0]]}.' or data == 'Sério? Desculpa, não sei o que aconteceu. :(':
                 data = socket_client.recv(4096)
                 print(data)
@@ -26,8 +29,6 @@ def client(ADDR):
                 data = socket_client.recv(4096)
                 print(data.decode())
                 break
-            else: 
-                socket_client.sendall(data.encode())
     sleep(3)
     menu() 
 
